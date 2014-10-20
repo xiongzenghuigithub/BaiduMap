@@ -1,7 +1,6 @@
 
 
 #import <UIKit/UIKit.h>
-#import "BMapKit.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

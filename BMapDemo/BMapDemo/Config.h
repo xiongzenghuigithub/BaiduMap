@@ -9,6 +9,8 @@
 #ifndef BMapDemo_Config_h
 #define BMapDemo_Config_h
 
+#import "BMapKit.h"
+
 #define AppStoreBaiduMapKey @"1mcOoiwLnNBhYjSeXM15agTV"
 #define TestBaiduMapKey @"dAvREXQbGy7RTC8hEBu3WLem"
 

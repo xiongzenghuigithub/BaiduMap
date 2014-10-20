@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9442FEFD19F4A7C8000C4B4B /* CustomOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442FEFC19F4A7C8000C4B4B /* CustomOverlayView.m */; };
+		9442FEFF19F4A9FF000C4B4B /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 9442FEFE19F4A9FF000C4B4B /* test.png */; };
 		94CBA24919EFB7F500BA1319 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CBA24819EFB7F500BA1319 /* Foundation.framework */; };
 		94CBA24B19EFB7F500BA1319 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CBA24A19EFB7F500BA1319 /* CoreGraphics.framework */; };
 		94CBA24D19EFB7F500BA1319 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CBA24C19EFB7F500BA1319 /* UIKit.framework */; };
@@ -42,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9442FEFB19F4A7C8000C4B4B /* CustomOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomOverlayView.h; sourceTree = "<group>"; };
+		9442FEFC19F4A7C8000C4B4B /* CustomOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomOverlayView.m; sourceTree = "<group>"; };
+		9442FEFE19F4A9FF000C4B4B /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		94CBA24519EFB7F500BA1319 /* BMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CBA24819EFB7F500BA1319 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94CBA24A19EFB7F500BA1319 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -164,6 +169,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9442FEFA19F4A7B3000C4B4B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				9442FEFB19F4A7C8000C4B4B /* CustomOverlayView.h */,
+				9442FEFC19F4A7C8000C4B4B /* CustomOverlayView.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		94CBA23C19EFB7F500BA1319 = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +217,8 @@
 		94CBA24E19EFB7F500BA1319 /* BMapDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9442FEFE19F4A9FF000C4B4B /* test.png */,
+				9442FEFA19F4A7B3000C4B4B /* views */,
 				94CBA2C519EFBBBA00BA1319 /* controller */,
 				94CBA27719EFB91700BA1319 /* BaiduMap_IOSSDK_v2.4.1_Lib */,
 				94CBA25719EFB7F500BA1319 /* AppDelegate.h */,
@@ -407,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94CBA2B919EFB91700BA1319 /* mapapi.bundle in Resources */,
+				9442FEFF19F4A9FF000C4B4B /* test.png in Resources */,
 				94CBA25319EFB7F500BA1319 /* InfoPlist.strings in Resources */,
 				94CBA2CA19EFBBCA00BA1319 /* RootViewController.xib in Resources */,
 				94CBA25B19EFB7F500BA1319 /* Images.xcassets in Resources */,
@@ -430,6 +447,7 @@
 			files = (
 				94CBA25919EFB7F500BA1319 /* AppDelegate.m in Sources */,
 				94CBA25519EFB7F500BA1319 /* main.m in Sources */,
+				9442FEFD19F4A7C8000C4B4B /* CustomOverlayView.m in Sources */,
 				94CBA2C919EFBBCA00BA1319 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -637,6 +655,7 @@
 				94CBA27319EFB7F600BA1319 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94CBA27419EFB7F600BA1319 /* Build configuration list for PBXNativeTarget "BMapDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -645,6 +664,7 @@
 				94CBA27619EFB7F600BA1319 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
