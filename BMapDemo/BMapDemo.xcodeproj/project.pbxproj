@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9442FEFD19F4A7C8000C4B4B /* CustomOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442FEFC19F4A7C8000C4B4B /* CustomOverlayView.m */; };
 		9442FEFF19F4A9FF000C4B4B /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 9442FEFE19F4A9FF000C4B4B /* test.png */; };
+		9442FF0319F4ADB9000C4B4B /* OfflineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442FF0119F4ADB9000C4B4B /* OfflineViewController.m */; };
+		9442FF0419F4ADB9000C4B4B /* OfflineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9442FF0219F4ADB9000C4B4B /* OfflineViewController.xib */; };
 		94CBA24919EFB7F500BA1319 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CBA24819EFB7F500BA1319 /* Foundation.framework */; };
 		94CBA24B19EFB7F500BA1319 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CBA24A19EFB7F500BA1319 /* CoreGraphics.framework */; };
 		94CBA24D19EFB7F500BA1319 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CBA24C19EFB7F500BA1319 /* UIKit.framework */; };
@@ -44,9 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9442FEFB19F4A7C8000C4B4B /* CustomOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomOverlayView.h; sourceTree = "<group>"; };
-		9442FEFC19F4A7C8000C4B4B /* CustomOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomOverlayView.m; sourceTree = "<group>"; };
 		9442FEFE19F4A9FF000C4B4B /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		9442FF0019F4ADB9000C4B4B /* OfflineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflineViewController.h; sourceTree = "<group>"; };
+		9442FF0119F4ADB9000C4B4B /* OfflineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfflineViewController.m; sourceTree = "<group>"; };
+		9442FF0219F4ADB9000C4B4B /* OfflineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OfflineViewController.xib; sourceTree = "<group>"; };
 		94CBA24519EFB7F500BA1319 /* BMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CBA24819EFB7F500BA1319 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94CBA24A19EFB7F500BA1319 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -169,15 +171,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9442FEFA19F4A7B3000C4B4B /* views */ = {
-			isa = PBXGroup;
-			children = (
-				9442FEFB19F4A7C8000C4B4B /* CustomOverlayView.h */,
-				9442FEFC19F4A7C8000C4B4B /* CustomOverlayView.m */,
-			);
-			path = views;
-			sourceTree = "<group>";
-		};
 		94CBA23C19EFB7F500BA1319 = {
 			isa = PBXGroup;
 			children = (
@@ -217,12 +210,11 @@
 		94CBA24E19EFB7F500BA1319 /* BMapDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9442FEFE19F4A9FF000C4B4B /* test.png */,
-				9442FEFA19F4A7B3000C4B4B /* views */,
-				94CBA2C519EFBBBA00BA1319 /* controller */,
-				94CBA27719EFB91700BA1319 /* BaiduMap_IOSSDK_v2.4.1_Lib */,
 				94CBA25719EFB7F500BA1319 /* AppDelegate.h */,
 				94CBA25819EFB7F500BA1319 /* AppDelegate.m */,
+				9442FEFE19F4A9FF000C4B4B /* test.png */,
+				94CBA2C519EFBBBA00BA1319 /* controller */,
+				94CBA27719EFB91700BA1319 /* BaiduMap_IOSSDK_v2.4.1_Lib */,
 				94CBA25A19EFB7F500BA1319 /* Images.xcassets */,
 				94CBA24F19EFB7F500BA1319 /* Supporting Files */,
 				94CBA2C419EFBAC500BA1319 /* Config.h */,
@@ -343,6 +335,9 @@
 				94CBA2C619EFBBCA00BA1319 /* RootViewController.h */,
 				94CBA2C719EFBBCA00BA1319 /* RootViewController.m */,
 				94CBA2C819EFBBCA00BA1319 /* RootViewController.xib */,
+				9442FF0019F4ADB9000C4B4B /* OfflineViewController.h */,
+				9442FF0119F4ADB9000C4B4B /* OfflineViewController.m */,
+				9442FF0219F4ADB9000C4B4B /* OfflineViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -426,6 +421,7 @@
 				9442FEFF19F4A9FF000C4B4B /* test.png in Resources */,
 				94CBA25319EFB7F500BA1319 /* InfoPlist.strings in Resources */,
 				94CBA2CA19EFBBCA00BA1319 /* RootViewController.xib in Resources */,
+				9442FF0419F4ADB9000C4B4B /* OfflineViewController.xib in Resources */,
 				94CBA25B19EFB7F500BA1319 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,9 +441,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9442FF0319F4ADB9000C4B4B /* OfflineViewController.m in Sources */,
 				94CBA25919EFB7F500BA1319 /* AppDelegate.m in Sources */,
 				94CBA25519EFB7F500BA1319 /* main.m in Sources */,
-				9442FEFD19F4A7C8000C4B4B /* CustomOverlayView.m in Sources */,
 				94CBA2C919EFBBCA00BA1319 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

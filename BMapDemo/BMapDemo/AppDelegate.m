@@ -2,6 +2,7 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "OfflineViewController.h"
 
 @implementation AppDelegate
 
@@ -14,7 +15,9 @@
     [self initBMKMapManager];
     
     self.window.backgroundColor = [UIColor whiteColor];
-    _rootNav = [[UINavigationController alloc] initWithRootViewController:[[RootViewController alloc] init]];
+//    RootViewController *rootVC = [[RootViewController alloc] init];
+    OfflineViewController *rootVC = [[OfflineViewController alloc] init];
+    _rootNav = [[UINavigationController alloc] initWithRootViewController:rootVC];
     self.window.rootViewController = _rootNav;
     [self.window makeKeyAndVisible];
     
