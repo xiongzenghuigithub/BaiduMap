@@ -10,6 +10,8 @@
 		9442FEFF19F4A9FF000C4B4B /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 9442FEFE19F4A9FF000C4B4B /* test.png */; };
 		9442FF0319F4ADB9000C4B4B /* OfflineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442FF0119F4ADB9000C4B4B /* OfflineViewController.m */; };
 		9442FF0419F4ADB9000C4B4B /* OfflineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9442FF0219F4ADB9000C4B4B /* OfflineViewController.xib */; };
+		9442FF0919F4BB7F000C4B4B /* POIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442FF0719F4BB7F000C4B4B /* POIViewController.m */; };
+		9442FF0A19F4BB7F000C4B4B /* POIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9442FF0819F4BB7F000C4B4B /* POIViewController.xib */; };
 		94CBA24919EFB7F500BA1319 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CBA24819EFB7F500BA1319 /* Foundation.framework */; };
 		94CBA24B19EFB7F500BA1319 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CBA24A19EFB7F500BA1319 /* CoreGraphics.framework */; };
 		94CBA24D19EFB7F500BA1319 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CBA24C19EFB7F500BA1319 /* UIKit.framework */; };
@@ -49,6 +51,9 @@
 		9442FF0019F4ADB9000C4B4B /* OfflineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflineViewController.h; sourceTree = "<group>"; };
 		9442FF0119F4ADB9000C4B4B /* OfflineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfflineViewController.m; sourceTree = "<group>"; };
 		9442FF0219F4ADB9000C4B4B /* OfflineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OfflineViewController.xib; sourceTree = "<group>"; };
+		9442FF0619F4BB7F000C4B4B /* POIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIViewController.h; sourceTree = "<group>"; };
+		9442FF0719F4BB7F000C4B4B /* POIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIViewController.m; sourceTree = "<group>"; };
+		9442FF0819F4BB7F000C4B4B /* POIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POIViewController.xib; sourceTree = "<group>"; };
 		94CBA24519EFB7F500BA1319 /* BMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CBA24819EFB7F500BA1319 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94CBA24A19EFB7F500BA1319 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -338,6 +343,9 @@
 				9442FF0019F4ADB9000C4B4B /* OfflineViewController.h */,
 				9442FF0119F4ADB9000C4B4B /* OfflineViewController.m */,
 				9442FF0219F4ADB9000C4B4B /* OfflineViewController.xib */,
+				9442FF0619F4BB7F000C4B4B /* POIViewController.h */,
+				9442FF0719F4BB7F000C4B4B /* POIViewController.m */,
+				9442FF0819F4BB7F000C4B4B /* POIViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -417,6 +425,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9442FF0A19F4BB7F000C4B4B /* POIViewController.xib in Resources */,
 				94CBA2B919EFB91700BA1319 /* mapapi.bundle in Resources */,
 				9442FEFF19F4A9FF000C4B4B /* test.png in Resources */,
 				94CBA25319EFB7F500BA1319 /* InfoPlist.strings in Resources */,
@@ -445,6 +454,7 @@
 				94CBA25919EFB7F500BA1319 /* AppDelegate.m in Sources */,
 				94CBA25519EFB7F500BA1319 /* main.m in Sources */,
 				94CBA2C919EFBBCA00BA1319 /* RootViewController.m in Sources */,
+				9442FF0919F4BB7F000C4B4B /* POIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
